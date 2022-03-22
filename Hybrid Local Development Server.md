@@ -12,7 +12,7 @@ It serves two sites under the same domain locally and enable developers to test 
 ### Get started
 
 **Prerequisite**
-- Node.js 14.x
+- Node.js ^14.x
 
 **Installation**
 ```sh
