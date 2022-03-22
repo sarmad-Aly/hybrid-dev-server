@@ -10,6 +10,10 @@ This server is a reverse proxy that forward requests to two origins:
 It serves two sites under the same domain locally and enable developers to test hybrid deployment shopper flows.
 
 ### Get started
+
+**Prerequisite**
+- Node.js 14.x
+
 **Installation**
 ```sh
 git clone https://gist.github.com/kevinxh/77f1cad926d84e938f7de55fdeb0535c hybrid-dev-server
