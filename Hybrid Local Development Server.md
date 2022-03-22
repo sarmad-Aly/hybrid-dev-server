@@ -22,7 +22,9 @@ npm install
 Open index.js and change the following variables:
 
 `SFRA_INSTANCE_ORIGIN` - The SFRA development instance URL.
+
 `PWA_ORIGIN` - The PWA local development server URL.
+
 `PWA_ROUTES` - The PWA routes.
 
 **Run the server**
