@@ -89,6 +89,6 @@ const app = express()
 
 app.use(createProxyMiddleware(options))
 
-app.listen(PORT, () => {
-	console.log(`Proxy server listening: https://cc-hybrid-app.herokuapp.com`)
-})
+// app.listen(PORT, () => {
+// 	console.log(`Proxy server listening: https://cc-hybrid-app.herokuapp.com`)
+// })
