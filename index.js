@@ -6,7 +6,8 @@ const {
 const { matchPath } = require("react-router")
 
 const PORT = process.env.PORT || 5000
-const SFRA_INSTANCE_ORIGIN = `https://zzrx-031.dx.commercecloud.salesforce.com`
+// const SFRA_INSTANCE_ORIGIN = `https://zzrx-031.dx.commercecloud.salesforce.com`
+const SFRA_INSTANCE_ORIGIN = `https://zzrx-031.sandbox.us03.dx.commercecloud.salesforce.com`
 const PWA_ORIGIN = "https://haven-production.mobify-storefront.com"
 
 // Update the PWA routes
@@ -95,3 +96,5 @@ app.listen(PORT, err => {
 		`Proxy server listening: https://cc-hybrid-app.herokuapp.com${PORT}`
 	)
 })
+
+//https://zzrx-031.dx.commercecloud.salesforce.com`
