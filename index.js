@@ -5,7 +5,7 @@ const {
 } = require("http-proxy-middleware")
 const { matchPath } = require("react-router")
 
-const PORT = 8001
+const PORT = 3030
 const SFRA_INSTANCE_ORIGIN = `https://zzrx-031.dx.commercecloud.salesforce.com`
 const PWA_ORIGIN = "https://haven-production.mobify-storefront.com"
 
@@ -89,6 +89,7 @@ const app = express()
 
 app.use(createProxyMiddleware(options))
 
-// app.listen(PORT, () => {
-// 	console.log(`Proxy server listening: https://cc-hybrid-app.herokuapp.com`)
-// })
+app.listen(PORT, err => {
+	if (err) throw err
+	console.log(`Proxy server listening: https://cc-hybrid-app.herokuapp.com`)
+})
