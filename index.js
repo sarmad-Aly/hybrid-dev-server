@@ -78,7 +78,7 @@ const options = {
 					// replace them so they go through the proxy
 					.replace(
 						new RegExp(`${SFRA_INSTANCE_ORIGIN}`, "g"),
-						`http://localhost:${PORT}`
+						`https://cc-hybrid-app.herokuapp.com`
 					)
 			)
 		})(proxyRes, req, res)
@@ -90,5 +90,5 @@ const app = express()
 app.use(createProxyMiddleware(options))
 
 app.listen(PORT, () => {
-	console.log(`Proxy server listening: http://localhost:${PORT}`)
+	console.log(`Proxy server listening: https://cc-hybrid-app.herokuapp.com`)
 })
